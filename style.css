@@ -46,7 +46,6 @@ nav a:hover{
     color: var(--white);
     font-size: 24px;
     font-weight: 200;
-    letter-spacing: em;
     background-color: #FF9593;
     border: 1px solid var(--second-color);
     border-radius: 35px;
@@ -92,7 +91,7 @@ h1{
     font-weight: 400;
     color: #CD5C6E;
 }
-h3{
+h3.desc{
     font-size: 26px;
     font-weight: 400;
     margin-top: 20px;
@@ -196,12 +195,6 @@ a.card{
     text-decoration: none;
 }
 
-
-
-
-
-
-
 /*form*/
 
 :root {
@@ -210,7 +203,7 @@ a.card{
     --color-third          : #e85f99;
     --color-forth          : #50bda1;
     --block-width          :   600px;
-    --block-height         :   550px;
+    --block-height         :   650px;
     --border-width         : .825rem;
     --border-radius-outer  :     8px;
     --border-radius-inner  : calc(var(--border-radius-outer) / 2);
@@ -219,10 +212,12 @@ a.card{
     line-height: 1.4
   }
   
-  *, *:before, *:after { box-sizing: inherit }
+  *, *:before, *:after { 
+    box-sizing: inherit 
+    }
   
   main.form {
-    height: 100vh;
+    padding: 3em 0;
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -233,14 +228,14 @@ a.card{
     height:  100%;
     animation: o-rotate-360 linear 8s infinite;}
   
-    .rainbow span {
+.rainbow span {
       display: block;
       width: 100%; 
       height: 100%;
       position: relative;
       transform: translate(-50%, -50%);}
   
-    .rainbow span:after {
+.rainbow span:after {
         display: block;
         content: "";
         width: 100%; height: 100%;
@@ -248,18 +243,20 @@ a.card{
         left: 100%;
     }
   
-    .rainbow span:first-child {
-        background: var(--color-first);}
-    .rainbow span:first-child:after { 
-        background: var(--color-second) }
+.rainbow span:first-child {
+        background: var(--color-first);
+    }
+.rainbow span:first-child:after { 
+        background: var(--color-second) 
+    }
+.rainbow span:last-child {
+         background: var(--color-third);
+        }
+.rainbow span:last-child:after { 
+        background: var(--color-forth) 
+    }
 
-     .rainbow span:last-child {
-         background: var(--color-third);}
-    .rainbow span:last-child:after { 
-        background: var(--color-forth) }
-
-  
-  .c-contact-box {
+.contact-box {
     width :  var(--block-width);
     height:  var(--block-height);
     overflow: hidden;
@@ -268,8 +265,7 @@ a.card{
     border-radius: var(--border-radius-outer);
     
 }
-  
-    .c-contact-box__wrapper {
+.contact-box__wrapper {
       width : calc(100% - var(--border-width));
       height: calc(100% - var(--border-width));
       position: absolute;
@@ -277,55 +273,70 @@ a.card{
       left: 50%;
       transform: translate(-50%, -50%);
       background: var(--white);
-      padding: 1.2rem 1rem 1.8rem;
       border-radius: var(--border-radius-inner);
     }
     
-    .c-contact-box__title {
-      font-size: 5rem;
-      color: #CD5C6E;
-    }
-    .c-contact-box__form {
-      margin-top: auto;
+.contact-box__title {
+        font-size: 5rem;
+        color: #CD5C6E;
+        font-weight: 400;
+        margin: 0.25em 0;
     }
   
-  @keyframes o-rotate-360 {
+@keyframes o-rotate-360 {
     0% { transform: rotate(0) }
   
     100% { transform: rotate(360deg) }
   }
-  
-  .input{
-    font-size: 1.75em;
-    transition: all 300ms ease;
+.input{
+    font-size: 1.25em;
+    margin-bottom: 1em;
+    border-radius: 0.3em;
     outline: none;
+    border-width: 1px;
+    padding: 0.5em;
   }
-  .input:hover, .input:active, .input:focus {      
-      border-color: var(--color-third);
-      box-shadow: 0 0 0 3px hsla(335, 75%, 64%, .25)
-    }
-  
-  .u-align-center {
+.input:hover, .input:active, .input:focus{
+    border-color: var(--color-third);
+    box-shadow: 0 0 0 3px hsla(335, 75%, 64%, .25);
+    transition: all 300ms ease;
+  }
+.align-center {
     text-align: center;
   }
+
   form{
     display: flex;
     flex-direction: column;
-    padding: 2em;
+    padding: 0 5em;
+  }
+  .description{
+    color: #5e5e5e;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+  }
+  .form-submit{
+    padding: 0.5em;
+    font-size: 1.5em;
+    background-color: var(--main-color);
+    border-radius: 1.5em;
+    border: none;
+    color: var(--white);
+    font-weight: 700;
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-submit:hover{
+    background-color: var(--second-color);
+    box-shadow: 0 0 0 3px hsla(335, 75%, 64%, .25);
+    transition: all 300ms ease;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
+  .icons-contact{
+    width: 2em;
+    height: 2em;
+  }
 
 /*for small laptops and big tablets*/
 @media screen and (max-width: 1201px) {
