@@ -115,14 +115,7 @@ h3.desc{
 }
 /*part left*/
 .box-left{
-    position: relative;
-    box-sizing: border-box;
-}
-.girls{
-    position: absolute;
-    height: 615px; 
-    top: 2px;
-    left: -34px;          
+    
 }
 .bg{
     background-color: var(--main-color);
@@ -130,6 +123,12 @@ h3.desc{
     width: 544px;
     height: 544px;
     margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.girls{
+    height: 615px;  
 }
 /*part right*/
 .main-text2{
@@ -164,7 +163,7 @@ img.icon{
     border-radius: 6px;
     margin-right: 20px;
 }
-ul{
+ul.team-profiles{
     list-style: none;
     text-align: center;
     display: flex;
@@ -174,7 +173,7 @@ ul{
     margin-right: auto;
     padding: 45px 45px 90px 45px;
 }
-ul li:first-of-type{
+.team-profiles li:first-of-type{
     padding-left: 20px;
 }
 a.card span:nth-child(2){
@@ -333,10 +332,39 @@ a.card{
     transition: all 300ms ease;
   }
 
+
+/*footer contacts*/
+.contacts-footer{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 45px 45px 90px 45px;
+}
+.contacts-footer li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 9em;
+}
+.contacts-footer a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: 200;
+    margin-top: 2em;
+}
+.contacts-footer a:hover{
+    color:var(--second-color);
+}
   .icons-contact{
-    width: 2em;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
   }
+
 
 /*for small laptops and big tablets*/
 @media screen and (max-width: 1201px) {
@@ -379,11 +407,24 @@ a.card{
         justify-content: center;
     }
 }
-/* in process...
+
 @media screen and (max-width: 576px) {
     div.hero-main{
         padding: 80px 0;
         justify-content: center;
         text-align: center;
+    }
+    .contacts-footer{
+        flex-direction: column;
+        align-content: center;
+    }
+    .contacts-footer li{
+        margin-bottom: 2em;
+    }
+    nav a:nth-child(1), nav a:nth-child(2){
+        display: none;
+    }
+    .hero{
+        flex-wrap: wrap;
     }
 }
