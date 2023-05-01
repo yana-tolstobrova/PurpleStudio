@@ -114,9 +114,7 @@ h3.desc{
     justify-content: space-evenly;
 }
 /*part left*/
-.box-left{
-    
-}
+
 .bg{
     background-color: var(--main-color);
     border-radius: 272px 0px 272px 272px;
@@ -387,6 +385,8 @@ a.card{
     }
     .hero{
         align-items: unset;
+        padding: 40px;
+        justify-content: center;
     }
     .bg{
         width: 250px;
@@ -402,12 +402,9 @@ a.card{
     .main-text2{
         padding: 0;
     }
-    .hero{
-        padding: 40px;
-        justify-content: center;
-    }
-}
 
+}
+/* in process...
 @media screen and (max-width: 576px) {
     div.hero-main{
         padding: 80px 0;
