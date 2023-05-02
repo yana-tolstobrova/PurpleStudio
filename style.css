@@ -5,22 +5,22 @@
     --white: #FFFFFF;
 }
 *{
-    margin: 0px;
+    margin: 0em;
     font-family: 'Jost', sans-serif;
 }
 /*header*/
 header{
     background-color: var(--main-color);
-    height: 100px;
+    height: 6.25em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 60px;
+    padding: 0em 3.75em;
 }
 .logo{
     font-family: 'Alumni Sans', sans-serif;
     color: var(--white);
-    font-size: 48px;
+    font-size: 3em;
     align-items: baseline;
 }
 .logo-studio{
@@ -33,7 +33,7 @@ nav a{
 }
 nav a {
     font-weight: 200;
-    font-size: 24px;
+    font-size: 1.5em;
     margin-left: 55px;
 }
 nav a:hover{
@@ -65,15 +65,15 @@ nav a:hover{
     justify-content: space-evenly;
 }
 /*part left*/
-.bg-div{
+.bg-div, .bg{
     background-color: var(--main-color);
-    border-radius: 272px 0px 272px 272px;
+    border-radius: 17.31em 0em 17.31em 17.31em;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px;
-    width: 544px;
-    height: 544px;
+    margin: 2.5em;
+    width: 34em;
+    height: 34em;
 }
 img.coders{
     height: 454px;
@@ -81,21 +81,23 @@ img.coders{
 }
 /*part right*/
 .main-text{
-    width: 520px;
-    margin-left: 80px;
-    padding-bottom: 60px;
+    width: 32.5em;
+    margin-left: 5em;
+    padding-bottom: 3.75em;
 }
 h1{
-    font-size: 96px;
+    font-size: 6em;
     line-height: 70px;
     font-weight: 400;
     color: #CD5C6E;
+}
+h1.name{
     width: 4em;
 }
 h3.desc{
-    font-size: 26px;
+    font-size: 1.625em;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 1.25em;
     margin-bottom: 25px;
 }
 .action-main, button.action{
@@ -117,17 +119,10 @@ h3.desc{
 /*part left*/
 
 .bg{
-    background-color: var(--main-color);
-    border-radius: 272px 0px 272px 272px;
-    width: 544px;
-    height: 544px;
-    margin: 40px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 2.5em 0;
 }
 .girls{
-    height: 615px;  
+    height: 38.43em;  
 }
 /*part right*/
 .main-text2{
@@ -145,7 +140,7 @@ h3.desc{
     align-items: flex-start;
 }
 button.action{
-    padding: 10px 40px;
+    padding: 7px 40px;
 }
 
 /*footer*/
