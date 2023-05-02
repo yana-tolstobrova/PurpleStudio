@@ -90,6 +90,7 @@ h1{
     line-height: 70px;
     font-weight: 400;
     color: #CD5C6E;
+    width: 4em;
 }
 h3.desc{
     font-size: 26px;
@@ -328,6 +329,7 @@ a.card{
     background-color: var(--second-color);
     box-shadow: 0 0 0 3px hsla(335, 75%, 64%, .25);
     transition: all 300ms ease;
+    cursor: pointer;
   }
 
 
