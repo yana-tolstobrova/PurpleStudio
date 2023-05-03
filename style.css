@@ -71,13 +71,15 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2.5em;
+    margin: 2.5em 0;
     width: 34em;
     height: 34em;
 }
 img.coders{
-    height: 454px;
-    margin: 150px;                     
+    width: 500px;
+    border-radius: 0 0 250px 250px;
+    padding-top: 45px; 
+    margin: 22px;                  
 }
 /*part right*/
 .main-text{
@@ -90,10 +92,9 @@ h1{
     line-height: 70px;
     font-weight: 400;
     color: #CD5C6E;
-}
-h1.name{
     width: 4em;
 }
+
 h3.desc{
     font-size: 1.625em;
     font-weight: 400;
