@@ -404,7 +404,7 @@ ul.team-profiles{
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
     .eliminar{
         display: none;
     }
