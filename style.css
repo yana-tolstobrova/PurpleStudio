@@ -76,10 +76,10 @@ nav a:hover{
     height: 34em;
 }
 img.coders{
-    width: 500px;
+    width: 31.25em;
     border-radius: 0 0 16em 16em;
     padding-top: 2.3em; 
-    margin: 22px;                  
+    margin: 1.375em;                  
 }
 /*part right*/
 .main-text{
@@ -396,6 +396,9 @@ ul.team-profiles{
     }
     .main-text2, .main-text{
         padding: 0 0 0 4em;
+    }
+    button.action{
+        margin-left: 1em;
     }
 
 }
