@@ -539,9 +539,6 @@ ul.team-profiles{
     .contacts-footer a{
         margin-top: 1.4em;
     }
-    .contacts-footer li:last-child{
-        margin-bottom: 0;
-    }
     .icons-contact{
         width: 2.3em;
         height: 2.3em;
@@ -678,18 +675,14 @@ ul.team-profiles{
     }
     .contacts-footer{
         align-content: center;
-        padding: 1.5em;
+        padding: 1.5em 0em;
     }
     .contacts-footer li{
-        margin-bottom: 2em;
         font-size: 0.7em;
         font-weight: 400;
     }
     .contacts-footer a{
         margin-top: 1em;
-    }
-    .contacts-footer li:last-child{
-        margin-bottom: 0;
     }
     .icons-contact{
         width: 2em;
