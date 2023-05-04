@@ -59,7 +59,7 @@ nav a:hover{
 /*main page flexbox with 2 divs*/
 .hero-main{
     display: flex; 
-    width: 85%;
+    width: 90%;
     align-items: center;
     margin: 0 auto;
     justify-content: space-evenly;
@@ -161,6 +161,7 @@ ul.team-profiles{
     list-style: none;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 90%;
     margin-left: auto;
@@ -355,9 +356,8 @@ ul.team-profiles{
     height: 2.5em;
   }
 
-
 /*for small laptops and big tablets*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1199px) {
     header{
         padding: 0 1em;
     }
@@ -403,7 +403,150 @@ ul.team-profiles{
     }
 
 }
+@media screen and (max-width: 885px) {
+    .eliminar{
+        display: none;
+    }
+    .logo{
+        font-family: 'Alumni Sans', sans-serif;
+        color: var(--white);
+        font-size: 3em;
+        align-items: baseline;
+    }
+    .button-contact{
+        font-size: 1em;
+        padding: 0.3em 1em;
+    }
+    .hero-main, .hero{
+        align-items: unset;
+        justify-content: center;
+        width: 95%;
+        padding: 2em 1em;
+    }
+    .bg, .bg-div{
+        width: 15em;
+        height: 15em;
+        border-radius: 7.5em 0 7.5em 7.5em;
+        margin: 0;
+    }
+    img.girls{
+        height: 16.5em;          
+    }
+    .bg-div{
+        padding-top: 0;
+    }
+    .coders{
+        height: 16.25em;
+        padding-bottom: 1.2em;
+    }
+    .main-text, .main-text2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-text2, .main-text{
+        padding: 0;
+        margin-left: 0.5em;
+        text-align: center;
+    }
+    h1, .contact-box__title {
+        font-size: 2.8em;
+        width: 100%;
+    }
+    h3.desc{
+        font-size: 1.2em;
+        margin-bottom: 1em;
+    }
+    .action-main{
+        font-size: 0.8em;
+        padding: 0.3em 1em;
+    }
+    
+    .text{
+        font-size: 0.8em;
+        text-align: justify;
+        width: 80%;
+    }
+    
+    .main-text2{
+        margin-left: 1em;
+    }
+    .contacts{
+        margin-top: 1em;
+    }
 
+    button.action{
+        margin-left: 1em;
+    }
+    li.card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .photo-link img{
+        height: 11em;
+    }
+    ul.team-profiles{
+        padding: 2em 0;
+        margin: 0;
+        width: 100%;
+    }
+    .name-footer{
+        font-size: 1.5em;
+    }
+    .text-footer{
+        font-size: 1em;
+    }
+    .icon{
+        width: 2em;
+        height: 2em;
+    }
+    .person-data{
+        margin: 0 0.5em 0 5em;
+    }
+
+    .nav-small{
+        font-size: 1.5em;
+    }
+    form{
+        padding: 0 5em;
+    }
+    .description, .input{
+        font-size: 1.2em;
+    }
+    .form-submit, button.action{
+        font-size: 1em;
+        width: 8em;
+        padding: 0.5em 1em;
+    }
+    .contact-box {
+        width :  28em;
+        height:  34em;
+    }
+    .contact-box__wrapper{
+        padding-top: 1em;
+    }
+    .contacts-footer{
+        align-content: center;
+        padding: 2em;
+    }
+    .contacts-footer li{
+        margin-bottom: 2em;
+        font-size: 1em;
+    }
+    .contacts-footer a{
+        margin-top: 1.4em;
+    }
+    .contacts-footer li:last-child{
+        margin-bottom: 0;
+    }
+    .icons-contact{
+        width: 2.3em;
+        height: 2.3em;
+    }
+}
 @media screen and (max-width: 600px) {
     .eliminar{
         display: none;
@@ -471,10 +614,6 @@ ul.team-profiles{
         font-size: 0.6em;
         text-align: center;
     }
-    .hero{
-        width: 100%;
-        padding: 1em 0.5em;
-    }
     .main-text2{
         margin-left: 1em;
     }
@@ -516,9 +655,8 @@ ul.team-profiles{
     .person-data{
         margin: 0 0.5em 0 0.5em;
     }
-
     .nav-small{
-        font-size: 0.9em;
+        font-size: 1em;
     }
     form{
         padding: 0 3.5em;
@@ -539,13 +677,13 @@ ul.team-profiles{
         padding-top: 1em;
     }
     .contacts-footer{
-        flex-direction: column;
         align-content: center;
-        padding: 3em;
+        padding: 1.5em;
     }
     .contacts-footer li{
         margin-bottom: 2em;
         font-size: 0.7em;
+        font-weight: 400;
     }
     .contacts-footer a{
         margin-top: 1em;
